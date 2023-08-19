@@ -5,7 +5,7 @@
 }
 
 .main {
-  margin-left: 220px;
+  margin-left: 180px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -16,7 +16,11 @@
 
 .title {
   font-size: 2rem;
-  color: #333;
+  color: rgb(116, 85, 85);
+}
+
+.image {
+  box-shadow: #ddd;
 }
 .projects {
   display: flex;
@@ -34,4 +38,46 @@
 .project-card img {
   max-width: 100%;
   height: auto;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(164, 158, 158, 0.1);
+}
+
+.infoContainer {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.image {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 8px double #d4c05b;
+  box-shadow: 
+    0px 0px 15px #888888,
+    0 0 0 1000px rgba(227, 227, 227, 0.1) inset;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.6), transparent 70%);
+  position: relative;
+}
+
+.bio {
+  flex: 1; /* Increase the flex value to give this element more space */
+  padding: 30px; /* Increase padding to make the bio section appear larger */
+  background-color: #848383;
+  border-radius: 10px;
+  font-size: 1.1rem; /* Increase the base font size */
+}
+
+.bio h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem; /* Make the heading larger */
+}
+
+.bio p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
 }
