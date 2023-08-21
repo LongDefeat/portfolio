@@ -1,0 +1,88 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header {
+  text-align: center;
+  padding-bottom: 40px;
+  color: moccasin;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  color: gainsboro;
+  margin-top: 10px;
+}
+
+.profileImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.bio {
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.subsection-title {
+  color: moccasin;
+  font-size: 24px;
+  border-bottom: 2px solid moccasin;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.subsection-content {
+  color: rgb(228, 228, 228);
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.journey{
+  margin: 20px;
+}
+
+.journey h2 {
+  color: rgb(216, 182, 123);
+}
+
+.community {
+  margin: 20px;
+}
+
+.community h2{
+  color: rgb(216, 182, 123);
+}
+
+.background{
+  margin: 20px;
+}
+
+.background h2 {
+  color: rgb(216, 182, 123);
+}
+
+.interests {
+  margin-top: 40px;
+}
+
+.interests h2 {
+  color: moccasin;
+}
+
+.interests ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+.contact {
+  margin-top: 30px;
+}

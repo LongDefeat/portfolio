@@ -1,4 +1,4 @@
-// components/Portfolio.js
+
 import Image from 'next/image';
 import projects from '@/data/projects';
 import ProjectCard from '@/components/ProjectCard';
@@ -22,7 +22,7 @@ const Portfolio = () => (
           <p>
             I am a passionate developer seeking to create technologies that enhance the lives of the 
             <span className={worldStyles.world}> 🌎 </span>
-            around him
+            around him. Distinctive journey transitioning from law to dynamic software engineering. My goal is always seeking the intersection between problem-solving and createive expression.
           </p>
         </div>
       </div>
