@@ -7,7 +7,7 @@
 .header {
   text-align: center;
   padding: 37px 10px;
-  color: #708f57;
+  color: #001A23;
   font-family: 'Verdana', Geneva, Tahoma, sans-serif;
   font-weight: 600; /* Makes the text slightly bolder */
   font-size: 2.5em; /* Increase font size for emphasis */
@@ -37,9 +37,9 @@
 }
 
 .subsection-title {
-  color: rgba(255, 228, 181, 0.785);
+  color: #BCF2BB;
   font-size: 24px;
-  border-bottom: 2px solid moccasin;
+  border-bottom: 2px solid #BCF2BB;
   padding-bottom: 10px;
   margin-bottom: 20px;
   margin-top: 30px;

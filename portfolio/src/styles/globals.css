@@ -6,7 +6,7 @@ html, body, ul, li, h1, h2, h3, p {
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-image: linear-gradient(to bottom, #000000, #292828); 
+  background-image: linear-gradient(to bottom, #001A23, #0A1045); 
   box-sizing: border-box;
   font-family: Arial, sans-serif;
   overflow-x: hidden;

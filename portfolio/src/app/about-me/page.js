@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <h1 className={styles.subsectionTitle}>About Me</h1>
+        <h1 className={styles.subsectionTitle}>About</h1>
       </header>
 
       <section className={styles.profile}>

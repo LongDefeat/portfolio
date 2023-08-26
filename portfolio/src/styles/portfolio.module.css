@@ -16,40 +16,42 @@
 
 .title {
   font-size: 2rem;
-  color: rgb(116, 85, 85);
+  color: rgb(230, 230, 230);
+  text-align: center;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
 }
 
-.image {
-  box-shadow: #ddd;
-}
-.projects {
+.nameContainer {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.project-card {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-}
-
-.project-card img {
-  max-width: 100%;
-  height: auto;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.project-card:hover img {
-  transform: scale(1.05);
-  box-shadow: 0px 0px 20px rgba(164, 158, 158, 0.1);
-}
-
-.infoContainer {
-  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 40px;
+  background: linear-gradient(160deg, #3a3a3a, #1f1f1f);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.name {
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.name:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#mason {
+  margin-right: 20px;
+}
+
+#sams {
+  margin-left: 20px;
 }
 
 .image {
@@ -58,26 +60,68 @@
   object-position: center top;
   border: 8px double #d4c05b;
   box-shadow: 
-    0px 0px 15px #888888,
+    0px 4px 15px rgba(136, 136, 136, 0.5),
     0 0 0 1000px rgba(227, 227, 227, 0.1) inset;
   background: radial-gradient(circle at center, rgba(255, 255, 255, 0.6), transparent 70%);
   position: relative;
+  transition: box-shadow 0.3s ease;
 }
 
-.bio {
-  flex: 1; /* Increase the flex value to give this element more space */
-  padding: 30px; /* Increase padding to make the bio section appear larger */
-  background-color: #848383;
+.image:hover {
+  box-shadow: 
+    0px 6px 20px rgba(136, 136, 136, 0.7),
+    0 0 0 1000px rgba(227, 227, 227, 0.2) inset;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column; /* Set direction to column to stack children vertically */
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
   border-radius: 10px;
-  font-size: 1.1rem; /* Increase the base font size */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+  background-color: #7A9E7E;
+  width: 80%; /* Set width to ensure there's space around the container */
+  margin: 0 auto; /* Center the container */
+}
+
+
+.bio {
+  flex: 1;
+  padding: 30px;
+  background-color: #31493C;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color:#fff;
+}
+
+.bio:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow effect on hover */
 }
 
 .bio h2 {
   margin-bottom: 1.5rem;
-  font-size: 1.6rem; /* Make the heading larger */
+  font-size: 1.6rem; 
+  font-weight: 600; /* Slightly bold */
+  transition: transform 0.3s ease, color 0.3s ease; /* Added color transition */
+}
+
+.bio h2:hover {
+  transform: scale(1.05);
+  color: #333; /* Darker color on hover for contrast */
 }
 
 .bio p {
   margin-bottom: 1.5rem;
   line-height: 1.6;
+  font-weight: 400; /* Regular weight for paragraph */
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center; /* Center the project cards */
+  width: 100%; /* Make sure the projects container uses the full width */
 }
