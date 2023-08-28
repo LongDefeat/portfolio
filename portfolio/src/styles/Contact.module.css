@@ -9,11 +9,12 @@
     width: 80%;
     max-width: 800px;
     padding: 40px;
+    background: linear-gradient(135deg, #7A9E7E, #6A8E6F);    background-color: #7A9E7E;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08); /* Even softer shadow */
     border-radius: 15px;
   }
   
-  .image {
+.image {
     border-radius: 50%;
     object-fit: cover;
     object-position: center top;
@@ -21,28 +22,86 @@
     border: solid 3px moccasin;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08); /* Consistent soft shadow for image */
   }
+
+.image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
   
-  .infoContainer {
+.infoContainer {
     display: flex;
     align-items: center;
     gap: 30px;
-  }
+}
+
+.contactHeader {
+    position: relative; 
+    display: inline-block; 
+}
+
+.contactHeader::after {
+    content: ""; 
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 2px; 
+    background-color: moccasin; 
+}
   
-  .bio {
+.bio {
     flex: 1;
     padding: 20px;
     border-radius: 10px;
     font-size: 1.1rem;
-  }
+}
   
-  .bio h2 {
+.bio h2 {
     font-size: 1.6rem;
-    color: rgb(183, 183, 183);
+    color:#001A23;
     margin-bottom: 10px;
-  }
+}
   
-  .bio p {
+.bio p {
     font-size: 1.1rem;
     color: #fff;
-  }
+}
+
+.note{
+    margin: auto;
+    padding: 7px;
+    font-style: italic;
+}
+
+.contactList {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.list {
+    margin-top: 5px;
+    color:#001A23;
+    border-radius: 8px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.resumeLink {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 2px solid #001A23;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #001A23;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    transform: translateY(-2px);
+}
+
+.resumeLink:hover {
+    background-color: #0A1045;
+    color: #fff;
+}
   

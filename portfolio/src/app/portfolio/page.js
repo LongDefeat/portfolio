@@ -4,7 +4,7 @@ import ProjectCard from '@/components/ProjectCard';
 
 /* Styles */
 import styles from '@/styles/portfolio.module.css';
-import worldStyles from '@/styles/spinningWorld.module.css';
+import computerStyles from '@/styles/spinningComputer.module.css';
 
 const Portfolio = () => (
   <div className={styles.container}>
@@ -21,9 +21,9 @@ const Portfolio = () => (
           height={300}
         />
         <div className={styles.bio}>
-          <h2>About Me <span className={worldStyles.world}> 🌎 </span></h2>
+          <h2>About Me <span className={computerStyles.computerSway}> 💻 </span></h2>
           <p>
-            I am a passionate developer seeking to create technologies that enhance the lives of those around me. Distinctive journey transitioning from law to dynamic software engineering. My goal is always seeking the intersection between problem-solving and creative expression.
+            Hello! I'm Mason, a passionate developer seeking to create technologies that enhance the lives of those around me. Distinctive journey transitioning from law to dynamic software engineering. My goal is always seeking the intersection between problem-solving and creative expression.
           </p>
         </div>
         <div className={styles.projects}>
