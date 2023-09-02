@@ -1,9 +1,9 @@
 const projects = [
     {
-      title: 'Project 1',
-      description: 'Description for project 1',
-      link: 'https://github.com/yourusername/project1',
-      image: '/images/project1.png',
+      title: 'Move Maker Journal',
+      description: 'movie maker journal',
+      link: '/movie-maker-journal',
+      image: '/images/home-page.png',
     },
     {
       title: 'Project 2',
