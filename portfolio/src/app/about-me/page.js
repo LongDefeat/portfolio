@@ -22,22 +22,27 @@ const AboutMe = () => {
       <section className={styles.journey}>
         <h2 className={styles.subsectionTitle}>Career Journey</h2>
         <p className={styles.subsectionContent}>
-          Transitioning from law to tech, I found my niche in languages like JavaScript and Python, and frameworks like React. I've dedicated myself to continuous learning, demonstrated by my 800-hour course completion at Springboard. Here, I honed my skills from front-end development to intricate data structures and algorithms.
+          Over the last few years I've been a teacher and a paralegal, but over the pandemic I decided to shift my focus towards software engineering.
+          After months of watching youtube videos and Udemy courses, I enrolled and completed the Springboard full-stack engineering bootcamp which led me to find my niche in JavaScript, and frameworks like React. I've dedicated myself to continuous learning, demonstrated by my 800-hour course completion at Springboard. 
+          Here, I honed my skills in both frontend and backend development and I continue to study intricate data structures and algorithms in my free time.
         </p>
       </section>
 
       <section className={styles.community}>
         <h2 className={styles.subsectionTitle}>Community Engagement</h2>
         <p className={styles.subsectionContent}>
-          But I'm not all about code. In 2022, I established the "Learn, Teach, Code" meetup group in Pasadena, championing a space for engineers to collaborate. One of my proudest moments? Leading the creation of a meteor strike tracking platform. Coding with a cause!
+          But I'm not all about my coding journey. In late 2022, I established the "Learn, Teach, Code" meetup group in Pasadena, championing a space for engineers around Los Angeles to collaborate and learn from one another. 
+          Super thankful I started the meetup as I now have many friends I hang out with outside the meetup, but also it's allowed me the opportunity to guide budding engineers in their coding journeys.
         </p>
       </section>
 
       <section className={styles.background}>
         <h2 className={styles.subsectionTitle}>More About Me</h2>
         <p className={styles.subsectionContent}>
-          Away from tech, my academic background in History and German Language from the University of Arkansas complements my global perspective. It's not just about solving problems, but understanding the broader narratives.
+          Away from tech, my academic background in History and German Language from the University of Arkansas complements my global perspective. It's not just about solving problems, but understanding the broader narratives. 
         </p>
+        <br/>
+        <p className={styles.subsectionContent}>When I find spare time, you can find me learning new instruments, composing music for short films, and finally perfecting Steely Dan songs on guitar.</p>
       </section>
 
       <section className={styles.interests}>
@@ -47,6 +52,7 @@ const AboutMe = () => {
           <li>Screenwriting</li>
           <li>Updating my Letterbox'd</li>
           <li>Outdoor Adventures</li>
+          <li>Learning more about AI</li>
         </ul>
       </section>
 

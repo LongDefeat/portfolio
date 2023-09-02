@@ -24,13 +24,13 @@ const Contact = () => (
           
           <ul className={styles.contactList}>
             <li>
-              <strong className={styles.list}>Email:</strong> <a href="mailto:mason@example.com">mason@example.com</a>
+              <strong className={styles.list}>Email:</strong> <a href="mailto:mason@example.com">masonsams7@gmail.com</a>
             </li>
             <li>
-              <strong className={styles.list}>LinkedIn:</strong> <a href="https://www.linkedin.com/in/masonsams/" target="_blank" rel="noopener noreferrer">Mason Sams</a>
+              <strong className={styles.list}>LinkedIn:</strong> <a href="https://www.linkedin.com/in/masonsams/" target="_blank" rel="noopener noreferrer">linkedin.com/in/masonsams7</a>
             </li>
             <li>
-              <strong className={styles.list}>GitHub:</strong> <a href="https://github.com/masonsams" target="_blank" rel="noopener noreferrer">masonsams</a>
+              <strong className={styles.list}>GitHub:</strong> <a href="https://github.com/masonsams" target="_blank" rel="noopener noreferrer">https://github.com/LongDefeat</a>
             </li>
           </ul>
           
