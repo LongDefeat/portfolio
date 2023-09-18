@@ -1,21 +1,21 @@
 const projects = [
     {
-      title: 'Move Maker Journal',
+      title: 'Movie Maker Journal',
       description: 'movie maker journal',
       link: '/movie-maker-journal',
-      image: '/images/home-page.png',
+      image: '/images/home-page.jpg',
     },
     {
-      title: 'Project 2',
-      description: 'Description for project 2',
-      link: 'https://github.com/yourusername/project2',
-      image: '/images/project2.png',
+      title: 'Fireball',
+      description: 'fireball',
+      link: '/fireball',
+      image: '/images/fireball.jpg',
     },
     {
       title: 'Project 3',
       description: 'Description for project 2',
       link: 'https://github.com/yourusername/project2',
-      image: '/images/project2.png',
+      // image: '/images/project2.png',
     },
   ];
   

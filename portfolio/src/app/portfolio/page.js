@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import projects from '@/data/projects';
-import ProjectCard from '@/components/ProjectCard';
+import projectsData from '@/data/projects';
+import Projects from '../projects/page';
 
 /* Styles */
 import styles from '@/styles/portfolio.module.css';
@@ -27,13 +27,8 @@ const Portfolio = () => (
             Hello! I'm Mason, a passionate developer seeking to create technologies that enhance the lives of those around me. Distinctive journey transitioning from law to dynamic software engineering. My goal is always seeking the intersection between problem-solving and creative expression.
           </p>
         </div>
-        {/* <div className={styles.projects}>
-          {projects.map((project, index) => (
-            <ProjectCard key={index} {...project} />
-          ))}
-        </div> */}
         <h2>Featured Projects</h2>
-        <Link href="/movie-maker-journal">
+        {/* <Link href="/movie-maker-journal">
           <Image
               src="/images/home-page.jpg"
               alt="Movie Maker Journal Home Page"
@@ -43,7 +38,8 @@ const Portfolio = () => (
               href='/movie-maker-journal'
           />
           <h3>Discover Movie Maker Journal!</h3>  
-      </Link>
+        </Link> */}
+      <Projects projects={projectsData} />
       </div>
     </main>
   </div>

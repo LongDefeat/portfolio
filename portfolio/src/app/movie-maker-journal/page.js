@@ -1,13 +1,18 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from '@/styles/MovieMakerJournal.module.css'
+import Projects from '../projects/page';
+import projectsData from '@/data/projects';
 
 const MovieMakerJournal = () => (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h2 className={styles.projectTitle}>MovieMakerJournal</h2>
+        <h2 className={styles.projectTitle}>The Movie Maker Journal</h2>
         <p className={styles.projectDescription}>
-          MovieMakerJournal is a platform that ... (Add your project description here)
+          The Movie Maker Journal is a platform I am consistently updating that allows for users to submit opinions about movies and to 
+          catalogue the movies they have seen as well as their favorites.
         </p>
+        <Link className={styles.liveCodeButton} href='https://movie-maker-journal-app-5v8c-lmofepxbs-longdefeat.vercel.app/'>Live Code</Link>
 
         <div className={styles.imageSection}>
           <Image className={styles.image} src={"/images/home-page.jpg"} alt="homepage" width={300} height={300} />
@@ -34,6 +39,7 @@ const MovieMakerJournal = () => (
           <Image className={styles.image} src={"/images/actors.jpg"} alt="actors" width={300} height={300} />
           <p className={styles.imageDescription}>Discover actors starring in some of your favorite, new movies.</p>
         </div>
+        
       </main>
     </div>
 );

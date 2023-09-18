@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .main {
@@ -11,14 +12,57 @@
 }
 
 .projectTitle {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    color: rgb(240, 232, 232);
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;  
 }
 
 .projectDescription {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: rgb(196, 190, 190);
+    margin-bottom: 45px;
 }
+
+.projectTitle::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;  /* Adjust as needed for distance from text */
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, rgb(3, 22, 135), rgb(243, 231, 60));
+    border-radius: 2px;  
+    animation: animateUnderline 2s infinite;  
+}
+
+.liveCodeButton {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, rgb(3, 22, 135), rgb(243, 231, 60));
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px; /* to give some space before images */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.liveCodeButton:hover {
+    transform: translateY(-3px); /* slight lift effect */
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+.liveCodeButton:active {
+    transform: translateY(1px); /* pressing down effect */
+}
+
 
 .imageSection {
     display: grid;
@@ -32,9 +76,35 @@
     width: 100%;
     height: auto;  
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image:hover{
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
 }
 
 .imageDescription {
     flex: 2;
     font-size: 1.1rem;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.imageSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 35px; 
+}
+
+@keyframes animateUnderline {
+    0% {
+        background-position: -100% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
 }
