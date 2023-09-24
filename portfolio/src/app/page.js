@@ -27,9 +27,8 @@ const Portfolio = () => (
             Hello! I'm Mason, a passionate developer seeking to create technologies that enhance the lives of those around me. Distinctive journey transitioning from law to dynamic software engineering. My goal is always seeking the intersection between problem-solving and creative expression.
           </p>
         </div>
-        <h2>Featured Projects</h2>
-      
-      <Projects projects={projectsData} />
+        <h2 className={styles.featuredProjects}>Featured Projects</h2>
+          <Projects projects={projectsData} />
       </div>
     </main>
   </div>

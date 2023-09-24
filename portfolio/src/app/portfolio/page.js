@@ -28,17 +28,6 @@ const Portfolio = () => (
           </p>
         </div>
         <h2>Featured Projects</h2>
-        {/* <Link href="/movie-maker-journal">
-          <Image
-              src="/images/home-page.jpg"
-              alt="Movie Maker Journal Home Page"
-              width={410}  
-              height={255} 
-              className="featured-image"
-              href='/movie-maker-journal'
-          />
-          <h3>Discover Movie Maker Journal!</h3>  
-        </Link> */}
       <Projects projects={projectsData} />
       </div>
     </main>

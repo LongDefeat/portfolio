@@ -12,6 +12,11 @@
     text-align: center;
 }
 
+.projectTitle {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
 .projectImage {
     width: 100%;
     height: auto;
@@ -25,7 +30,7 @@
     padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 .projectLink:hover {

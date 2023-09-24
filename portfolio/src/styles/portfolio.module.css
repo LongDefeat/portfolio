@@ -118,6 +118,10 @@
   font-weight: 400; /* Regular weight for paragraph */
 }
 
+/* .featuredProjects{
+  text-decoration:
+} */
+
 .projects {
   display: flex;
   flex-wrap: wrap;
