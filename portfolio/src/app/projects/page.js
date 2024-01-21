@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "@/styles/ProjectsPage.module.css";
+import styles from "@/styles/Projects.module.css";
 import projectsData from "@/data/projects";
 
 const Projects = ({ projects = projectsData }) => {
